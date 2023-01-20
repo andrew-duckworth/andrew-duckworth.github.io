@@ -1,8 +1,143 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+<head>
+    <style>
+      #box img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 40%;
+        height: 28%;
+        
+      }
+      @media all and (max-width: 480px){
+        #box img {
+          width: 100%;
+        }
+      }
 
+      #cloud1 img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        
+      }
+      @media all and (max-width: 480px){
+        #cloud1 img {
+          width: 100%;
+        }
+      }
+
+      #cloud2 img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        
+      }
+      @media all and (max-width: 480px){
+        #cloud2 img {
+          width: 100%;
+        }
+      }
+
+      #marginpic img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        
+      }
+      @media all and (max-width: 480px){
+        #marginpic img {
+          width: 100%;
+        }
+      }
+
+      #cloud3 img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        border-color: azure;
+        border-width: 10px;
+        border-style: dotted;
+        border-radius: 50%;
+        
+      }
+      @media all and (max-width: 480px){
+        #cloud3 img {
+          width: 100%;
+        }
+      }
+
+      #borderpic img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        
+      }
+      @media all and (max-width: 480px){
+        #borderpic img {
+          width: 100%;
+        }
+      }
+
+      #cloud4 img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        border-color: azure;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 0%;
+        padding: 20px;
+        
+      }
+      @media all and (max-width: 480px){
+        #cloud4 img {
+          width: 100%;
+        }
+      }
+
+      #paddingpic img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        
+      }
+      @media all and (max-width: 480px){
+        #paddingpic img {
+          width: 100%;
+        }
+      }
+
+      
+    </style>  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
 
 <link href="../styles/main.css" rel="stylesheet" type="text/css">
@@ -21,9 +156,9 @@
 
     <div class="container"> 
     
-      <img src="../images/logo.jpg" alt="logo" class="logo"
+      <a href="../index.html"><img src="../images/logo.jpg" alt="logo" class="logo"
             width="250"
-            height="60">
+            height="60"></a>
       <nav>
 
         <ul>
@@ -42,9 +177,63 @@
     <h2>What is the difference between Margin, Border, and Padding? </h2>
 
     
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <p>In this blog entry I will be talking about the differences between margin, border and padding.</p>
+   
+   <div id="box">
+    <img src="../images/box model.png" alt="box" class="box">
+   </div>
+    
+   <h2> What is the Margin? </h2>
+   <p>The margin serves at the outermost layer between elements, it is used to create space around elements like an image.</p> 
+   <p>For example, if you had two images on top of each other and you wanted to seperate the images you would change the margins.</p>
+   <p>I will be using pictures of my dog Cloud as examples :) </p>
+   <div id="cloud1">
+    <img src="../images/cloud1.png" alt="cloud1" class="cloud1">
+   </div>
+    
+   <div id="cloud2">
+    <img src="../images/cloud2.png" alt="cloud2" class="cloud2">
+    <figcaption>Here we can see that there is a small gap between the two pictures. If the margin was left unedited, the two pictures would appear stuck together. </figcaption>
+   </div>
+  
+   <div id="marginpic">
+    <img src="../images/marginpic.png" alt="marginpic" class="marginpic">
+    <figcaption>The top, right, bottom and left margins can be edited but here I only changed the bottom margin of the first image to create a gap.</figcaption>
+    
+   </div>
 
+   <h2>What is the Border?</h2>
+   <p>The border is the line that wraps around an element. Unlike the margin the border creates a separation that you can see.</p>
+   <p>Borders can also be changed depending on what you want, for exmaple the radius, colour, width and style can all be edited.</p>
+   <p>Here is a picture with a round dotted border:</p>
+  <div id="cloud3">
+    <img src="../images/cloud3.png" alt="cloud3" class="cloud3">
+  </div>
+  
+  <div id="borderpic">
+    <img src="../images/borderpic.png" alt="borderpic" class="borderpic">
+    <p>Here is the code used inside the style tag to create the border around the picture.</p>
+    <p>Borders do not have to be dotted, if you wanted a solid line as a border you would change dotted to solid where it says border style. </p>
+ 
+</div>
+ 
+<h2>What is Padding?</h2>
+<p>Padding is the space between the content and border. This is useful when you do not want the content to be touching the borders.</p>
+<p>Here is an example of how padding effects an image:</p>
+<div id="cloud4">
+  <img src="../images/cloud4.png" alt="cloud4" class="cloud4">
+  <figcaption>Looking at the image above, there is now a gap between the image and the border. This could be useful when it comes to making buttons or tables.</figcaption>
 
-  </body>
+</div>
+
+<div id="paddingpic"> 
+  <img src="../images/paddingpic.png" alt="paddingpic" class="paddingpic">
+  <figcaption>Here we have what the code looks like when padding was added. We can also see what an image will look like when we combine margins, borders and padding. </figcaption>
+</div>
+<p>That wraps up my blog on the differences between margin, border and padding. Thanks for reading!</p>
+
+<footer>
+  Andrew Duckworth 20/01/23
+</footer>
+</body>
 </html>

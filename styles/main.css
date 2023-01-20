@@ -84,3 +84,15 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+figcaption {
+  color:azure;
+  text-align: center;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  background-color: azure;
+}
