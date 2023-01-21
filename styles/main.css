@@ -96,3 +96,8 @@ footer {
   padding: 10px;
   background-color: azure;
 }
+
+div#content {
+  margin-left:20%;
+  margin-right:20%;
+}
