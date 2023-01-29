@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>Javascript Fundamentals</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+
+    <style>
+      .content {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+
+      #loopimg img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        display: block;
+        width: 20%;
+        height: 10%;
+        
+      }
+      @media all and (max-width: 480px){
+        #loopimg img {
+          width: 100%;
+        }
+      }
+
+      #domimg img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 40%;
+        height: 28%;
+        
+      }
+      @media all and (max-width: 480px){
+        #domimg img {
+          width: 100%;
+        }
+      }
+    </style>
+    </head>
+
+    <body>
+      <header>
+        <div class="container"> 
+      
+          <a href="../index.html"><img src="../images/logo.jpg" alt="logo" class="logo"
+                width="250"
+                height="60"></a>
+    
+          <nav>
+    
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./tech.html">Tech</a></li>
+              <li><a href="core.html">Core</a></li>
+            </ul>
+    
+          </nav>
+    
+        </div>
+        
+      </header>   
+
+      <div class="content">
+        <h1>Javascript Fundamentals</h1>
+
+        <h2>JavaScript and its relationship to HTML and CSS</h2>
+        <p>Think of a webpage as a house, HTML can be compared to the structure and layout of the house, imagine looking at a blueprint showing where all the different rooms are. CSS adds the design to the house, this could be anything from what colour the walls are, to what furniture you decide to decorate your house with. Finally, Javascript adds functionality to the home, this would be things like plumbing and electricity. Just like how a house needs all these things to make it a livable home, a website needs Javascript, HTML and CSS to work together to create an interactive experience. 
+        </p>
+
+        <h2>Control flow and loops</h2>
+        <p>Control flow is the order in which instructions in a program are executed. Think of it like a recipe for the program to follow, like a step by step instruction on how to make a cheeseburger. These steps must be followed in a specific order to reach the desired outcome. Loops are a type of control flow that allows code to be repeated multiple times until a certain condition is met. An example of this might be the process of going grocery shopping. First thing you will do here is make a shopping list, then go to the store, look for the desired item and add it to your trolley, repeating the previous step until you have everything in your list then the final step would be to pay for the groceries. Here is an example of what a for loop looks like: 
+        </p>
+
+        <div id="loopimg">
+          <img src="../images/loopimg.PNG" alt="loopimg" class="loopimg">
+          <figcaption>Here is a loop that searches an array then logs the names. This loop will keep logging names from the array until there are no more names left in the array. This is will be the condition that was mentioned earlier.  </figcaption>
+        </div>
+
+        <h2>What is the DOM?</h2>
+          <div id="domimg">
+            <img src="../images/domimg.png" alt="domimg" class="domimg">
+          </div>
+        
+        <p>The DOM also known as the Document Object Model is like a map for a website that helps programmers navigate it. It allows for changes to be made instantly to the appearance or behavior of a website using Javascript. For example if you had a button on your website that said “Hi” when you pressed it, but wanted to change it to “Hello”, you are able to use the DOM to search for and change the message.</p>
+        
+        <h2>Arrays and objects</h2>
+
+        <p>Going back to the shopping list analogy, think of an array like a shopping list with numbers next to each item, the numbers represent something called the index. Usually you would start the list with the number 1 but in the case of arrays we always start the count at 0. Say you had a list of five items and you wanted to select the second item on the list, you would refer to it as [1] since 0 is counted as the first item. An object in Javascript is just like an object in real life. Objects can be seen as a collection of names and use keys to access the names.
+        </p>
+
+        <h2>Functions</h2>
+
+        <p>Functions are like instructions for the computer to follow. They are useful because they allow you to group a set of related instructions together to get the desired outcome. You are able to give them specific names that can be reused later. An example would be that you had a function that counts the amount of cash that is made from sales every month and another function that counts the expenses of your business monthly. You could then use whatever you called each function together to calculate the profit for your business.
+        </p>
+
+      </div>
+
+    
+
+      <footer>
+        Andrew Duckworth 29/01/23
+      </footer>
+    </body>
+</html>
